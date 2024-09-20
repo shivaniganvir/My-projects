@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form sample</title>
+    <style>
+        #add{
+            padding: 40px 15px 40px 15px;
+        }
+    </style>
+</head>
+<body bgcolor="silver" text="blue" style="font-size: 15pt; font-family: Garamond;">
+    <div class="container">
+        <h2 style="margin-left: 130px;">ENTRY-FORM</h2>
+        <form name="frm1" action="" method="post">
+            <table>
+                <tr>
+                    <td><h2>Enter Your Name:</h2></td>
+                    <td><input type="text" id="firstname" name="firstname" required></td>
+                </tr>
+                <tr>
+                    <td><h2>Enter Your Age:</h2></td>
+                    <td><input type="number" id="age" name="age" required></td>
+                </tr>
+                <tr>
+                    <td><h2>Enter Your Address:</h2></td>
+                    <td><input type="address" id="add" name="add" required></td>
+                </tr>
+                <tr>
+                    <td><h2>Gender:</h2></td>
+                    <td><input type="radio" id="Female" name="Female" required>  <label>Female</label><br>
+                        <input type="radio" id="male" name="male" required>  <label>Male</label></td>
+                </tr>
+                <tr>
+                    <td><h2>Nationality:</h2></td>
+                   <td> <select name="Country" style="padding: 10px;">
+                        <option selected=""value="Default" >Please select country</option>
+                        <option value="AF">India</option>
+                        <option value="AL">Canada</option>
+                        <option value="DZ">Australia</option>
+                        <option value="AS">Russia</option>
+                        <option value="AD">USA</option>
+                    </select>
+                </td>
+                    </tr>
+                <tr>
+                    <td><h2>language Known:</h2></td>
+                    <td><input type="checkbox" value="c">  <label>C</label><br>
+                        <input type="checkbox" value="C++"> <label>C++</label><br>
+                        <input type="checkbox" value="vb">  <label>VB</label><br>
+                        <input type="checkbox" value="java">  <label>JAVA</label><br>
+                        <input type="checkbox" value="asp">  <label>ASP</label><br>
+                        <input type="checkbox" value="others">  <label>OTHERS</label><br>
+                    </td>
+                     </tr>
+                <tr>
+                    <td><h2>Enter Your Password: </h2></td>
+                    <td><input type="password" id="pass" name="pass" required></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

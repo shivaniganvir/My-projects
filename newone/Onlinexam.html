@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineExam</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        #ex{
+            margin-left: 150px;
+            padding: 20px;
+        }
+        label{
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+        .sub{
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            font-weight: 500;
+        }
+        
+    </style>
+</head>
+<body>
+    <form name="frm" onsubmit="markscl()">
+        <h1 id="ex">Welcome to online examination</h1>
+
+        
+        <h1>which of the following language is platform independent?</h1>
+        <input type="radio" name="one" placeholder="c">
+        <label>c++</label>
+        <input type="radio" name="one" placeholder="c++">
+        <label>c</label>
+        <input type="radio" name="one" placeholder="java">
+        <label>java</label>
+        <p>
+        <h1>which of the following is the class of all object?</h1>
+        <input type="radio" name="two" placeholder="c">
+        <label>system</label>
+        <input type="radio" name="two" placeholder="c++">
+        <label>object</label>
+        <input type="radio" name="two" placeholder="java">
+        <label>package</label>
+        <input type="radio" name="two" placeholder="java">
+        <label>class</label>
+    </p>
+    <p>
+        <h1>Which of these class is superclass of every class in java?</h1>
+        <input type="radio" name="there" placeholder="c">
+        <label>String class</label>
+        <input type="radio" name="there" placeholder="c++">
+        <label>Object class</label>
+        <input type="radio" name="there" placeholder="java">
+        <label>Abstract class</label>
+        <input type="radio" name="there" placeholder="java">
+        <label>ArrayList class</label>
+    </p>
+    <p>
+        <h1>Which of these method of object class can clone an object?</h1>
+        <input type="radio" name="four" placeholder="c">
+        <label>Objectcopy()</label>
+        <input type="radio" name="four" placeholder="c++">
+        <label>copy()</label>
+        <input type="radio" name="four" placeholder="java">
+        <label>Object clone()</label>
+        <input type="radio" name="four" placeholder="java">
+        <label>clone()</label>
+    </p>
+
+    <p>
+        <h1>Which of these method of object class is used to obtain class of an object at run time?</h1>
+        <input type="radio" name="five" placeholder="c">
+        <label>get()</label>
+        <input type="radio" name="five" placeholder="c++">
+        <label>void getclass()</label>
+        <input type="radio" name="five" placeholder="java">
+        <label>class getclass()</label>
+        <input type="radio" name="five" placeholder="java">
+        <label>None of the mentioned</label>
+    </p>
+        <input type="submit" value="submit the exam" class="sub">
+      
+    </form>
+    <script>
+        function markscl(){
+            var i=0;
+            if(document.frm.one[2].checked)
+            i++;
+             if(document.frm.two[1].checked)
+             i++;
+            if(document.frm.there[1].checked)
+            i++;
+             if(document.frm.four[2].checked)
+             i++;
+            if(document.frm.five[2].checked)
+            i++;
+            window.alert("Thank You Taking Online Exam! Your Score is:" +i);
+            
+         }
+    </script>
+    
+</body>
+</html

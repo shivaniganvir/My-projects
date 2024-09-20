@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application</title>
+    <style>
+        .container{
+            margin-left: 50rem;
+            background-color: cadetblue;
+            color: white;
+            padding: 20px;
+        }
+        label{
+            font-size: 22px;
+        }
+        .sub{
+            padding: 10px;
+            color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Web Application</h1>
+    <form action="Process.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <input type="submit" value="Submit" class="sub">
+    </form>
+</div>
+</body>
+</html>
